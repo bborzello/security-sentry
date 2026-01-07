@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WEBHOOK_URL="https://discordapp.com/api/webhooks/1458368219453587569/TjN73DnPrZNL_Klg7akreQyPWUVB9hn-eKi-h4-p1GkOWtW3mL_MGBI_UqR8MxYMI2AZ"
+WEBHOOK_URL=$(cat ~/.discord_webhook)
 
 # Watch the auth log for successful logins
 tail -Fn0 /var/log/auth.log | while read line; do
