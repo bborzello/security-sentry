@@ -30,6 +30,7 @@ A real-time Linux security suite designed to monitor, alert, and defend against 
 - **Bot-Catcher Service:** Architected a `systemd` background service to parse `/var/log/auth.log` for brute-force patterns.
 - **Automated Defensive Action:** Implemented a "3-strike" warning and "5-strike" ban policy. Malicious IPs are now dynamically added to the `iptables` DROP list.
 - **Stealth Strategy:** Configured the firewall to "Drop" rather than "Reject" banned traffic, making the server appear offline to malicious scanners.
+- **Passive Threat Intelligence:** Maintains a deduplicated registry of unique malicious IP addresses to analyze long-term attack trends.
 
 ### Jan 7, 2026
 - Initialized GitHub repository and established modular directory structure.
